@@ -14,32 +14,69 @@
    <string>MainWindow</string>
   </property>
   <widget class="QWidget" name="central_widget">
-   <widget class="QWidget" name="verticalLayoutWidget">
+   <widget class="QTableWidget" name="table">
     <property name="geometry">
      <rect>
-      <x>0</x>
-      <y>10</y>
-      <width>801</width>
-      <height>551</height>
+      <x>10</x>
+      <y>50</y>
+      <width>791</width>
+      <height>441</height>
      </rect>
     </property>
-    <layout class="QVBoxLayout" name="layout">
+   </widget>
+   <widget class="QWidget" name="horizontalLayoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>490</y>
+      <width>791</width>
+      <height>80</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout">
      <item>
-      <widget class="QLabel" name="label">
+      <widget class="QPushButton" name="addButton">
        <property name="font">
         <font>
          <pointsize>12</pointsize>
         </font>
        </property>
        <property name="text">
-        <string>  Прайс-лист</string>
+        <string>Добавить</string>
        </property>
       </widget>
      </item>
      <item>
-      <widget class="QTableWidget" name="table"/>
+      <widget class="QPushButton" name="updateButton">
+       <property name="font">
+        <font>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>Изменить</string>
+       </property>
+      </widget>
      </item>
     </layout>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>10</y>
+      <width>181</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Прайс-лист</string>
+    </property>
    </widget>
   </widget>
   <widget class="QMenuBar" name="menubar">
